@@ -166,14 +166,14 @@ To get started, try adding:
 ## Contact
 
 **MakTech Doors**
-- Phone: +90 554 638 638 4
+- Phone: 263 789 009 829
 - Email: sales@maktechdoors.com
 - Hours: Monday - Saturday, 8 AM - 7 PM
-- Location: Istanbul, Turkey
+- Location: Harare ,Westgate 58 Purley Way 
 
 ## License
 
-This project is owned by MakTech Doors. All rights reserved.
+This project is owned by maktechsolutions . All rights reserved.
 
 ---
 
