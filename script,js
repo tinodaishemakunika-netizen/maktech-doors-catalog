@@ -1,0 +1,32 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const navLinks = document.getElementById('navLinks');
+  const navOverlay = document.getElementById('navOverlay');
+  const menuIcon = hamburgerBtn.querySelector('i');
+
+  function toggleMenu() {
+    const isOpen = navLinks.classList.toggle('active');
+    navOverlay.classList.toggle('active', isOpen);
+    
+    // Toggle icon between hamburger and close (X)
+    if (isOpen) {
+      menuIcon.classList.remove('fa-bars');
+      menuIcon.classList.add('fa-xmark');
+    } else {
+      menuIcon.classList.remove('fa-xmark');
+      menuIcon.classList.add('fa-bars');
+    }
+  }
+
+  hamburgerBtn.addEventListener('click', toggleMenu);
+  navOverlay.addEventListener('click', toggleMenu);
+
+  // Close drawer when clicking any link
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (navLinks.classList.contains('active')) {
+        toggleMenu();
+      }
+    });
+  });
+});
